@@ -4,7 +4,7 @@ Automated tests fo the webpage: ageno.pl
 Selenium WebDriver – Test Automation (Java)
 Project overview
 
-This project is a minimal yet production-style test automation framework created as a portfolio example for a Test Automation Engineer role.
+This project is a minimal, production-style test automation framework.
 
 The framework validates client-side form validation on the Ageno.pl contact page using:
 
