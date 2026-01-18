@@ -1,7 +1,7 @@
 //BaseTest to abstrakcyjna klasa bazowa dla wszystkich testów
 // Rola klasy BaseTest - dostarczenie wspólnych funkcjonalności
 // 1. zarządzanie cyklem życia WebDrivera.
-// 2. unikanie duplikacji kodu w klasach testowych
+// 2. unikanie duplikacji kodu w klasach testowych (zasada DRY)
 // 3. spójny lifecycle testów (setup / teardown)
 //    ( ułatwienie utrzymania i rozszerzania testów w przyszłości ) 
 
@@ -14,8 +14,8 @@ import org.openqa.selenium.WebDriver;
 public abstract class BaseTest {
 
 // główny interfejs Selenium do sterowania przeglądarką
-// scope: protected - chroniony dostęp, by klasy dziedziczące mogły z niego korzystać
-// ale nie był dostępny spoza hierarchii dziedziczenia
+// scope: protected - chroniony dostęp,
+// aby driver nie był dostępny spoza hierarchii dziedziczenia
 // (zapewnienie enkapsulacji i bezpieczeństwa danych)
 
 protected WebDriver driver;
@@ -33,3 +33,7 @@ protected WebDriver driver;
         }
     }
 }
+
+// klasa BaseTest jest abstract (abstrakcyjna), bo nie ma sensu tworzyć jej instancji.
+// nie jest testem - jest tylko fundamentem dla testów
+// BaseTest istnieje tylko po to, by inne klasy po niej dziedziczyły
