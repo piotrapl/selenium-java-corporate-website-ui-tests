@@ -37,3 +37,4 @@ protected WebDriver driver;
 // klasa BaseTest jest abstract (abstrakcyjna), bo nie ma sensu tworzyć jej instancji.
 // nie jest testem - jest tylko fundamentem dla testów
 // BaseTest istnieje tylko po to, by inne klasy po niej dziedziczyły
+//        (zapewnienie wspólnych funkcjonalności i lifecycle testów)
