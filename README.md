@@ -75,20 +75,11 @@ mvn test -Dheadless=true
 ## Co można by ulepszyć ? (What could be improved ?)
 
 #### Raportowanie i diagnostykę (np. Allure / Extent Reports)
-Aby zapewnić czytelne raporty, szybkie debugowanie błędów oraz lepszą widoczność wyników testów.
+  aby zapewnić czytelne raporty, szybkie debugowanie błędów oraz lepszą widoczność wyników testów.
 
 #### Konfigurację i środowiska (profiles, properties)
-Aby umożliwić uruchamianie testów na różnych środowiskach (URL, timeouty, tryb headless) bez zmian w kodzie.
+  aby umożliwić uruchamianie testów na różnych środowiskach (URL, timeouty, tryb headless) bez zmian w kodzie.
 
 #### Skalowalność (CI/CD, równoległość, wiele przeglądarek)
-Aby skrócić czas wykonania testów i dostosować framework do pracy zespołowej oraz pipeline’ów CI.
+  aby skrócić czas wykonania testów i dostosować framework do pracy zespołowej oraz pipeline’ów CI.
 
-## Cel projektu (Project goal)
-
-Repozytorium demonstruje:
-
-#### praktyczne użycie Selenium WebDriver w Javie,
-
-#### projektowanie stabilnych testów UI,
-
-#### poprawną architekturę testów automatycznych,
