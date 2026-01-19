@@ -57,9 +57,11 @@ chrome --version
 
 ## Uruchamianie testów (Running the tests)
 Tryb standardowy (z widoczną przeglądarką)
+
 mvn test
 
 Tryb headless
+
 mvn test -Dheadless=true
 
 ## Najważniejsze cechy rozwiązania (Key features)
