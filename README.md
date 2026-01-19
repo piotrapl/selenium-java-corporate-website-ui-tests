@@ -9,17 +9,15 @@ The website is a typical example of a simple yet functional company website.*
 ## Scenariusz testowy (Test scenario)
 Negatywny przypadek testowy – walidacja pola e-mail
 
-Otwarcie strony: https://ageno.pl/kontakt/
+- Otwarcie strony: https://ageno.pl/kontakt/
 
-Kliknięcie w pole „Twój e-mail”
+- Kliknięcie w pole „Twój e-mail”
 
-Wpisanie wartości, która nie jest adresem e-mail (np. fsfdadfsafsaf)
+- Wpisanie wartości, która nie jest adresem e-mail (np. fsfdadfsafsaf)
 
-Opuszczenie pola za pomocą klawisza TAB
+- Opuszczenie pola za pomocą klawisza TAB
 
-Weryfikacja wyświetlenia komunikatu walidacyjnego o dokładnej treści:
-
-Proszę wpisać adres e-mail.
+- Weryfikacja wyświetlenia komunikatu walidacyjnego o dokładnej treści: 'Proszę wpisać adres e-mail'
 
 ## Wymagania (Requirements)
 
@@ -36,7 +34,7 @@ Dostęp do Internetu
 Projekt korzysta z Selenium Manager, dlatego nie wymaga ręcznego pobierania ani konfiguracji ChromeDrivera.
 
 ### Sprawdzenie wymagań (command line)
-*Java:*
+#### Java:
 
 java -version
 
@@ -44,7 +42,7 @@ java -version
 
 java 17.x
 
-*Maven:*
+#### Maven:
 
 mvn -version
 
