@@ -79,7 +79,7 @@ Czytelna i skalowalna struktura projektu
 Uruchamianie testów przez Maven (projekt gotowy pod CI)
 
 ## Struktura projektu (Project structure)
-selenium-ageno-junit/
+Seleniumwd-java-witryna-firmowa-gui-tests/
 ├─ pom.xml
 └─ src
    └─ test
