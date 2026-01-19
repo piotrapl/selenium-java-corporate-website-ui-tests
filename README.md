@@ -1,6 +1,6 @@
-## Opis projektu
+## Wprowadzenie
 Projekt testów automatycznych w Selenium Webdriver/Java/jUnit. Testowana aplikacja: formularz kontaktowy na stronie https://ageno.pl/kontakt/. Strona stanowi typowy przykład prostej ale funkcjonalnej witryny firmwej.
-# english
+### Introduction in English 
 Automated test project using Selenium WebDriver, Java and JUnit.
 The tested application is the contact form on https://ageno.pl/kontakt/
 .
@@ -78,25 +78,7 @@ Czytelna i skalowalna struktura projektu
 
 Uruchamianie testów przez Maven (projekt gotowy pod CI)
 
-## Struktura projektu (Project structure)
-Seleniumwd-java-witryna-firmowa-gui-tests/
-├─ pom.xml
-└─ src
-   └─ test
-      ├─ java
-      │  └─ pl
-      │     └─ ageno
-      │        └─ tests
-      │           ├─ base
-      │           │  ├─ BaseTest.java
-      │           │  └─ DriverFactory.java
-      │           ├─ pages
-      │           │  └─ ContactPage.java
-      │           └─ ContactFormEmailValidationTest.java
-      └─ resources
-         └─ junit-platform.properties
-
-## Co można by ulepszyć ? (What could be improved)
+## Co można by ulepszyć ? (What could be improved ?)
 
 Raportowanie i diagnostyka (np. Allure / Extent Reports)
 Aby zapewnić czytelne raporty, szybkie debugowanie błędów oraz lepszą widoczność wyników testów.
