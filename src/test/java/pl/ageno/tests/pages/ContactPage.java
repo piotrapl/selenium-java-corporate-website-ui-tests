@@ -12,8 +12,9 @@ import java.time.Duration;
 // To jest klasa reprezentująca stronę kontaktową witryny firmowej
 
 //  @FindBy(css = "input[name='your-email']") to selektor pola email
-//  wyeażenie  @FindBy(..) nad polem emailInput wskazuje, że jest
-//  to pole input dla adresu email
+//  wyrażenie  @FindBy(..) nad emailInput wskazuje, że jest
+//  to pole input dla adresu email identyfikowane przez selektor CSS
+
 //  @FindBy oznacza elementy strony, które będą inicjalizowane przez PageFactory
 
 public class ContactPage {
