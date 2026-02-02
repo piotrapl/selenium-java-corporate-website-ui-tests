@@ -9,6 +9,14 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/*
+PageFactory - wzorzec projektowy do tworzenia obiektów reprezentujących strony internetowe
+     tutaj używany do tworzenia instancji ContactPage
+*/
+/*
+Page Object Model (POM) - wzorzec projektowy do organizacji kodu testowego
+    tutaj ContactPage reprezentuje stronę formularza kontaktowego
+*/
 public class ContactFormEmailValidationTest extends BaseTest {
 
 // Metody i klasy pomocnicze:
