@@ -11,8 +11,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ContactFormEmailValidationTest extends BaseTest {
 
-    record EmailCase(String notEmailValue, String expectedMessage) { }
+// Metody i klasy pomocnicze:
+// EmailCase - klasa reprezentująca przypadek testowy walidacji email
 
+    record EmailCase(String notEmailValue, String expectedMessage) { }
+    //     @MethodSource("emailValidationCases") - metoda dostarczająca dane testowe do testu walidacji email
     static Stream<EmailCase> emailValidationCases() {
         return Stream.of(
             new EmailCase(
@@ -22,6 +25,19 @@ public class ContactFormEmailValidationTest extends BaseTest {
         );
     }
 
+    //     @ParameterizedTest(name = "Walidacja email: \"{0}\" -> \"{1}\"") - test walidacji email  
+    //     używa danych z metody emailValidationCases()
+    //     tworzy instancję ContactPage, otwiera stronę, klika w pole email,
+    //     @MethodSource to metoda dostarczająca dane testowe do testu walidacji email
+    //     wg scenatiusza:
+    //      - wpisuje niepoprawny email
+    //      - opuszcza pole email za pomocą klawisza TAB
+    //      - czeka na pojawienie się komunikatu walidacyjnego i pobiera jego tekst
+    //     -  porównuje oczekiwaną wiadomość z faktyczną
+    //
+    // znak @ przed nazwą adnotacji wskazuje, że jest to adnotacja JUnit5
+    // nazwa testu będzie zawierać wartości parametrów przekazanych do testu
+    // w miejscu {0} i {1}
     @ParameterizedTest(name = "Walidacja email: \"{0}\" -> \"{1}\"")
     @MethodSource("emailValidationCases")
     void shouldShowExactEmailValidationMessage(EmailCase tc) {
