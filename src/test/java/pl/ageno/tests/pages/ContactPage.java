@@ -31,6 +31,7 @@ public class ContactPage {
     @FindBy(xpath = "//input[@name='your-email']/following-sibling::span[contains(@class,'wpcf7-not-valid-tip')]")
     private WebElement emailValidationTip;
 
+    // Konstruktor klasy ContactPage
     public ContactPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
@@ -65,7 +66,10 @@ public class ContactPage {
         }
         return this;
     }
-
+// metoda clickEmail() - klika w pole email
+// metoda typeEmail(String value) - wpisuje wartość do pola email
+// metoda leaveEmailByTab() - opuszcza pole email za pomocą klawisza TAB
+// metoda waitAndGetEmailValidationMessageText() - czeka na pojawienie się komunikatu walidacyjnego i zwraca jego tekst
     public ContactPage clickEmail() {
         wait.until(ExpectedConditions.elementToBeClickable(emailInput)).click();
         return this;
@@ -87,9 +91,8 @@ public class ContactPage {
         return emailValidationTip.getText();
     }
 
-    /**
-     * Czeka aż document.readyState == 'complete'
-     */
+    // metoda waitForPageToLoad() - czeka aż strona się w pełni załaduje
+    // (aż document.readyState == 'complete')
     private void waitForPageToLoad() {
         ExpectedCondition<Boolean> pageLoadCondition = driver ->
             ((JavascriptExecutor) driver)
@@ -98,7 +101,7 @@ public class ContactPage {
 
         wait.until(pageLoadCondition);
     }
-
+    //metoda sleepSilently(long millis) - wstrzymuje wykonanie na określony czas (w milisekundach)
     private void sleepSilently(long millis) {
         try {
             Thread.sleep(millis);
